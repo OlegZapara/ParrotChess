@@ -1,0 +1,84 @@
+.board{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  min-width: 400px;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 0.5vw;
+  overflow: hidden;
+}
+
+.cell{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.cell-black{
+  background-color: #955555;
+
+  /* background-color: #779556;  chess.com color */
+  color: #ebecd0;
+}
+
+.cell-white{
+  background-color: #ebecd0;
+  color:#955555;
+}
+
+.hidden{
+  display: none;
+}
+
+.left-numeration-hint{
+  position: absolute;
+  font-weight: 600;
+  left: 0.1rem;
+  top: 0.2rem;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+
+.bottom-numeration-hint{
+  position: absolute;
+  font-weight: 600;
+  right: 0.4rem;
+  bottom: 0.1rem;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+
+.hint{
+  position:absolute;
+  width: 30%;
+  height: 30%;
+  background-color: rgba(0, 0, 0, 0.2);
+  top:35%;
+  bottom: 35%;
+  left:35%;
+  right: 35%;
+  border-radius: 999px;
+}
+
+.chess-piece-icon{
+  height: 100%;
+  width: 100%;
+}
+.chess-piece-icon > *{
+  height: 100%;
+  width: 100%;
+}
+
+.chess-piece-icon:focus{
+  background-color: rgba(0, 0, 0, 0.1);
+}

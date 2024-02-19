@@ -1,0 +1,44 @@
+.side-menu{
+  background-color: #262522;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items:flex-start;
+  flex-direction: column;
+}
+
+.side-item{
+  min-width: 4rem;
+  padding: 1rem;
+  width: 100%;
+  transition: background-color 0.25s ease-out;
+  display: flex;
+  flex-direction: row;
+}
+
+.side-item:hover{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.side-item-link{
+  text-decoration: none;
+  width: 100%;
+}
+
+.side-item-name{
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-left: 0.5rem;
+  color: white;
+}
+
+.side-item-icon{
+  height: 2rem;
+  aspect-ratio: 1;
+}
+.side-item-icon > *{
+  width: 100%;
+  height: 100%;
+}
